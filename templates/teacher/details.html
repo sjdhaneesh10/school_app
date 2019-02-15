@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<div  class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Teacher Details</h3>
+            <div class="panel panel-primary">
+            <div class="panel-heading"><h5 style="color:white;">Teacher Details</h5></div>
+            <div class="panel-body">
+            <ul style="list-style-type:none; font-size:20px;">
+                    <li><i class="fa fa-user-circle-o fa-1.5x" aria-hidden="true"></i>{{teacher.Teacher_name}}</li> 
+                    <li>{{teacher.Class}}</li>
+                    <li><i class="fa fa-user-circle-o fa-1x" aria-hidden="true"></i>{{teacher.Mob_no}}</li>
+                    <li>{{teacher.Address}}</li>
+                    <li><i class="fa fa-microchip" aria-hidden="true"></i>{{teacher.DOB}}</li>
+                    
+                    </ul>
+            </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+         
+{% endblock %}
