@@ -11,7 +11,6 @@ def  teacher_view(request):
     dic = {
         'table_head':table_head,
         'teacher':teacher,
-
     }
     print(request.user)
     return render(request,'teacher/home.html',dic)
